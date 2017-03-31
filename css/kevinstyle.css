@@ -1,0 +1,275 @@
+body {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  	overflow-x: hidden;
+}
+p {
+  font-size: 20px;
+}
+p.small {
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #18BC9C;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;}
+
+/*navbar*/
+.navbar-custom {
+	background: #2C3E50;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  	text-transform: uppercase;
+  	font-weight: 700;
+ 	border: none;
+ 	text-align: center;
+ }
+.navbar-custom a:focus {
+	outline:none;
+}
+.navbar-custom .navbar-brand {
+	color:white;
+	letter-spacing: 2px;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: white;
+}
+
+.navbar-custom .navbar-nav {
+	letter-spacing: 2px;
+}
+.navbar-custom .navbar-nav li a {
+	color :white;
+}
+
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active {
+  color: white;
+  background: #18BC9C;
+}
+
+.navbar-custom .navbar-toggle {
+	color: white;
+	text-transform :uppercase;
+	font-size: 1em;
+	border-color:#18BC9C;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus{
+	background-color: #18BC9C;
+	color:white;
+	border-color:#18BC9C;
+}
+@media(min-width:767px) {
+    .navbar-custom {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding 0.7s ease-in-out, font .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;	
+        font-size: 1em;
+    }
+}
+
+
+#portfolio .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#portfolio * {
+  z-index: 2;
+}
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #eeeeee;
+}
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: none;
+  box-shadow: none !important;
+  resize: none;
+}
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top 0.3s ease,opacity 0.3s ease;
+  -moz-transition: top 0.3s ease,opacity 0.3s ease;
+  -ms-transition: top 0.3s ease,opacity 0.3s ease;
+  transition: top 0.3s ease,opacity 0.3s ease;
+}
+.floating-label-form-group:not(:first-child) {
+  padding-left: 14px;
+  border-left: 1px solid #eeeeee;
+}
+.floating-label-form-group-with-value label {
+  top: 0;
+  opacity: 1;
+}
+.floating-label-form-group-with-focus label {
+  color: #18BC9C;
+}
+
+/*header*/
+header {
+	text-align:center;
+	background:#18BC9C;
+	color:white;
+}
+
+header img {
+	display :block;
+	margin: 0 auto 20px;
+	padding-top :120px;
+	width:25%;
+}
+header .intro-text {
+	padding-bottom: 100px;
+}
+header .intro-text .name {
+	display :block;
+	font-family : "Montserrat","Helvetica Neue","Helvetica","Arial";
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 5em;
+}
+header .intro-text .greet {
+	font-size: 2em;
+	font-weight: 300;
+}
+hr.star-light {
+  padding: 0;
+  border-top: solid 5px;
+  max-width: 380px;
+}
+hr.star-primary {
+  padding: 0;
+  border-top: solid 5px;
+  max-width: 380px;
+}
+.glyphicon {
+	padding-top:20px;
+	font-size :100px;
+}
+
+/*About Section*/
+.success {
+	background: #2C3E50;
+	color :white;
+}
+
+.success h2 {
+	padding-top:40px;
+	font-size: 4em;
+}
+.success .list {
+	list-style :none;
+	font-size : 2em;
+	text-align: center;
+}
+.success .list li{
+	padding:10px;
+}
+
+.success p {
+	text-align :center;
+	font-style:italic;
+	font-size : 2em;
+	padding-bottom: 50px
+}
+
+/*contact Section*/
+footer {
+	background: #18BC9C;
+	color:white;
+	text-align: center;
+}
+footer h2{
+	font-size: 4em;
+	padding-top: 40px;
+}
+footer p{
+	font-style:"Helvetica Neue","Arial";
+	text-transform:uppercase;
+	font-size:1.5em;
+}
+footer .gambar {
+	width:20%;
+	display:inline;
+	padding-bottom: 60px;
+}
